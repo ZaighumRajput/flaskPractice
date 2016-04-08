@@ -1,0 +1,18 @@
+
+
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Heavy in the Game{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+	<h1>Hello, 
+{% if name %} 
+{{ name}} then go against the grain, and come the riches and the bitches and the fame
+Heavy in the game  {% else %} Stranger, do you choose to apply yourself? {% endif %}</h1>
+</div>
+{{ wtf.quick_form(form) }}
+{% endblock %}
+
+
